@@ -1,8 +1,11 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
- *  * main - main block
- *   * Return: 0
- *    */
+ *  this is the
+ *   main function
+ *    where program
+ *     execution
+ *     starts from
+ */
 int main(void)
 {
 		puts("\"Programming is like building a multilingual puzzle");

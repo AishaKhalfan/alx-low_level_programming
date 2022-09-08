@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**This is the
- * preffered method
- * for multiline commnets 
- * This is the main
- * function
- * also
+ *  preferred method
+ *   of multiline
+ *    comments
  */
 int main ()
 {
