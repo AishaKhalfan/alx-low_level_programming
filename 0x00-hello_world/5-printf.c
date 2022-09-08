@@ -1,13 +1,12 @@
 #include <stdio.h>
-/**This is the
- *  preferred method
- *   of multiline
- *    comments
+/**
+ * main - main block
+ *  return: returns zero
  */
-int main ()
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return 0;
+	return (0);
 }
 
 

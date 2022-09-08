@@ -1,10 +1,7 @@
 i#include <stdio.h>
 /**
- *  this is the
- *   main function
- *    where program
- *     execution
- *     starts from
+ * main - main block
+ * return: 0
  */
 int main(void)
 {
