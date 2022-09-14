@@ -1,6 +1,7 @@
 #include "main.h"
 /* Header files go here*/
 int _putchar(char aisha);
+char aisha[] = "_putchar";
 /**
  *  main - Print "_putchar" followed by a new line.
  *   Description: You are not allowed to include standard libraries.
