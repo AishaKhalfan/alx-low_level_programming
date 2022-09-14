@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://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@github.com/AishaKhalfan/alx-low_level_programming.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main

@@ -11,7 +11,6 @@ int main(void)
 {
 	char aisha[] = "_putchar";
 	int i = 0;
-	
 	while (aisha[i] != '\0')
 	{
 		_putchar(aisha[i]);
