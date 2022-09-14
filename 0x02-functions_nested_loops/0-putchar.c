@@ -8,7 +8,7 @@ int _putchar(char aisha);
  */
 int main(void)
 {
-	char aisha[]= "_putchar";
+	char aisha[] = "_putchar";
 	int i = 0;
 	
 	while (aisha[i] != '\0')
