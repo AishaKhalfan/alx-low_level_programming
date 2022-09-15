@@ -40,8 +40,9 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					{
-				_putchar('\n');
+				}
+			}
+			_putchar('\n');
 				x++;
 			}
 		}
