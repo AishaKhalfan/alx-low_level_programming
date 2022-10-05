@@ -1,5 +1,8 @@
-#ifndef MAIN_H
+#ifndef MAIN_Hi
 #define MAIN_H
+
+#include <stdlib.h>
+
 int _putchar(char c);
 char *_strcat(char *dest, 
 char *create_array(unsigned int size, char c);
@@ -9,5 +12,4 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
-
 #endif  
