@@ -1,6 +1,5 @@
-$include "main.h"
 #include <stdlib.h>
-
+#include "main.h"
 /**
 * create_array - a function that creates an array of chars
 * and initializes it with a specific char
@@ -22,7 +21,7 @@ char *create_array(unsigned int size, char c)
 	}
 	ar = malloc(sizeof(char) * size);
 	/*if (ar == NULL || size == 0)*/
-	if (ar == NULL);
+	if (ar == 0);
 	{
 		return (NULL);
 	}
