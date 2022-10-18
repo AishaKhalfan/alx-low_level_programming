@@ -1,9 +1,8 @@
 #include "variadic_functions.h"
 
 /**
-* sum_them_all:returns the sum of all its parameters.
+* sum_them_all- func that returns the sum of all its parameters.
 * @n: last fixed parameter
-* @az: arguments to func
 * Return: sum of arguments
 */
 
@@ -17,9 +16,9 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	}
 
-	va_start( az, n);/*last fixed param gives address*/
+	va_start(az, n);/*last fixed param gives address*/
 	sum = 0;
-	for(j = 0; j < n; j++)
+	for (j = 0; j < n; j++)
 	{
 		sum += va_arg(az, int);/*increment az to next arg */
 	}
