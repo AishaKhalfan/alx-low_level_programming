@@ -2,7 +2,8 @@
 
 /**
 * free_list - a function that frees list_t
-* @head - pointer to head node
+*
+* @head: pointer to head node of the linked list
 * Return: void
 */
 
