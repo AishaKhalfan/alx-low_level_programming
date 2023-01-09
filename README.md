@@ -22,3 +22,6 @@ Programming using the C language
 - 0x14-bit_manipulation
 - 0x15-file_io
 - 0x17-doubly_linked_lists
+- 0x18. C - Dynamic libraries
+- 0x19. C - Stacks, Queues - LIFO, FIFO
+- 0x1A. C - Hash tables
