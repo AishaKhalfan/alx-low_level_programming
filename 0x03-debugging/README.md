@@ -25,6 +25,7 @@ Debugging is the process of finding and fixing errors in software that prevents 
 <details>
 <summary>Great! You've completed the quiz successfully! Keep going! (Show quiz) </summary>
 **Question #0**
+
 This code doesn’t work as intended.
 
 ```C
@@ -105,6 +106,7 @@ int main(void)
 - [x] printf statements shows that break will cause “For loop exited” to print, indicating that the even number is never printed
 
 **Question #1**
+
 The following code gives this output. What is the error?
 ```bash
 khalfan@aisha:/debugging$ cat main.c                                
@@ -151,6 +153,7 @@ khalfan@aisha:/debugging$
 - [ ] We want to compare j so we need an if statement before j == j - 1
 
 **Question #2**
+
 The following code gives this incorrect output. Which of the following statements about what is causing the error is true?
 ```bash
 khalfan@aisha:/debugging$ cat main.c                               
@@ -195,6 +198,7 @@ khalfan@aisha:/debugging$ ./a.out
 - [x] j never increments so it is always going to print 0
 
 **Question #3**
+
 Look at the following code.
 ```bash
 khalfan@aisha:/debugging$ cat main.c                                
@@ -241,6 +245,7 @@ In the main.c file, on what line is the first error that the compiler returns?
 - [ ] 9
 
 - [ ] 7
+
 ``
 Tips:
 You do not have to know exactly what this code does yet (but you will soon!)
