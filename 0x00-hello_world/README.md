@@ -145,7 +145,7 @@ Which of the following are both valid comment syntaxes in ANSI C, and Betty-comp
 
 - [ ] ``// Comment``
 
-- [x] `` /*
+- [x] ``/*
  * Comment
  */``
 
@@ -168,13 +168,12 @@ In which category belongs the C programming language?
 </details>
 
 # TASKS
-0. Preprocessor
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
+# Task 0. Preprocessor
 Write a script that runs a C file through the preprocessor and save the result into another file.
 
-The C file name will be saved in the variable $CFILE
-The output should be saved in the file c
+- The C file name will be saved in the variable ``$CFILE``
+- The output should be saved in the file ``c``
+```bash
 khalfan@aisha:~/c/0x00$ cat main.c 
 #include <stdio.h>
 
@@ -201,20 +200,20 @@ int main(void)
  return (0);
 }
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 0-preprocessor
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 0-preprocessor
     
-1. Compiler
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
+# Task 1. Compiler
 Write a script that compiles a C file but does not link.
 
-The C file name will be saved in the variable $CFILE
-The output file should be named the same as the C file, but with the extension .o instead of .c.
-Example: if the C file is main.c, the output file should be main.o
+- The C file name will be saved in the variable ``$CFILE``
+- The output file should be named the same as the C file, but with the extension ``.o`` instead of ``.c``.
+	- Example: if the C file is ``main.c``, the output file should be ``main.o``
+```bash
 khalfan@aisha:~/c/0x00$ export CFILE=main.c
 khalfan@aisha:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -235,20 +234,20 @@ Makefile               100-intel      main.c  main.s
 khalfan@aisha:~/c/0x00$ cat -v main.o | head
 ^?ELF^B^A^A^@^@^@^@^@^@^@^@^@^A^@>^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^B^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@@^@^K^@^H^@UHM-^IM-eM-8^@^@^@^@]M-C^@GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609^@^T^@^@^@^@^@^@^@^AzR^@^Ax^P^A^[^L^G^HM-^P^A^@^@^\^@^@^@^\^@^@^@^@^@^@^@^K^@^@^@^@A^N^PM-^F^BC^M^FF^L^G^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^D^@M-qM-^?^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^E^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^R^@^A^@^@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@main.c^@main^@^@^@^@ ^@^@^@^@^@^@^@^B^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@.symtab^@.strtab^@.shstrtab^@.text^@.data^@.bss^@.comment^@.note.GNU-stack^@.rela.eh_frame^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[^@^@^@^A^@^@^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@!^@^@^@^A^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@'^@^@^@^H^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@,^@^@^@^A^@^@^@0^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@5^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@5^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@J^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@8^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@E^@^@^@^D^@^@^@@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M- ^A^@^@^@^@^@^@^X^@^@^@^@^@^@^@    ^@^@^@^F^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@^Q^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^A^@^@^@^@^@^@T^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^@^@^@^@^@^@^@M-X^@^@^@^@^@^@^@
 ^@^@^@^H^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@  ^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^P^A^@^@^@^@^@^@^M^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 1-compiler
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 1-compiler
     
-2. Assembler
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
+# Task 2. Assembler
 Write a script that generates the assembly code of a C code and save it in an output file.
 
-The C file name will be saved in the variable $CFILE
-The output file should be named the same as the C file, but with the extension .s instead of .c.
-Example: if the C file is main.c, the output file should be main.s
+- The C file name will be saved in the variable ``$CFILE``
+- The output file should be named the same as the C file, but with the extension ``.s`` instead of ``.c``.
+	- Example: if the C file is main.c, the output file should be ``main.s``
+```bash
 khalfan@aisha:~/c/0x00$ export CFILE=main.c
 khalfan@aisha:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -288,18 +287,18 @@ main:
     .ident  "GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609"
     .section    .note.GNU-stack,"",@progbits
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 2-assembler
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 2-assembler
     
-3. Name
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
-Write a script that compiles a C file and creates an executable named cisfun.
+# Task 3. Name
+Write a script that compiles a C file and creates an executable named ``cisfun``.
 
-The C file name will be saved in the variable $CFILE
+- The C file name will be saved in the variable ``$CFILE``
+```bash
 khalfan@aisha:~/c/0x00$ export CFILE=main.c
 khalfan@aisha:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -318,61 +317,61 @@ khalfan@aisha:~/c/0x00$ ls
 0-preprocessor  1-compiler   3-name  cisfun  main.o  Makefile
 100-intel       2-assembler  c       main.c  main.s
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 3-name
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 3-name
     
-4. Hello, puts
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
-Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+# Task 4. Hello, puts
+Write a C program that prints exactly ``"Programming is like building a multilingual puzzle,`` followed by a new line.
 
-Use the function puts
-You are not allowed to use printf
-Your program should end with the value 0
+- Use the function ``puts``
+- You are not allowed to use ``printf``
+- Your program should end with the value ``0``
+```bash
 khalfan@aisha:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out
 "Programming is like building a multilingual puzzle
 khalfan@aisha:~/c/0x00$ echo $?
 0
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 4-puts.c
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 4-puts.c
     
-5. Hello, printf
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
-Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+# Task 5. Hello, printf
+Write a C program that prints exactly ``with proper grammar, but the outcome is a piece of art,``, followed by a new line.
 
-Use the function printf
-You are not allowed to use the function puts
-Your program should return 0
-Your program should compile without warning when using the -Wall gcc option
+- Use the function ``printf``
+- You are not allowed to use the function ``puts``
+- Your program should return ``0``
+- Your program should compile without warning when using the ``-Wall gcc`` option
+```bash
 khalfan@aisha:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c
 khalfan@aisha:~/c/0x00$ ./a.out 
 with proper grammar, but the outcome is a piece of art,
 khalfan@aisha:~/c/0x00$ echo $?
 0
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 5-printf.c
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 5-printf.c
     
-6. Size is not grandeur, and territory does not make a nation
-mandatory
-Score: 95.0% (Checks completed: 100.0%)
+# Task 6. Size is not grandeur, and territory does not make a nation
 Write a C program that prints the size of various types on the computer it is compiled and run on.
 
-You should produce the exact same output as in the example
-Warnings are allowed
-Your program should return 0
-You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+- You should produce the exact same output as in the example
+- Warnings are allowed
+- Your program should return 0
+- You might have to install the package ``libc6-dev-i386`` on your Linux to test the ``-m32 gcc`` option
+```bash
 khalfan@aisha:~/c/0x00$ gcc 6-size.c -m32 -o size32 2> /tmp/32
 khalfan@aisha:~/c/0x00$ gcc 6-size.c -m64 -o size64 2> /tmp/64
 khalfan@aisha:~/c/0x00$ ./size32
@@ -390,20 +389,20 @@ Size of a float: 4 byte(s)
 khalfan@aisha:~/c/0x00$ echo $?
 0
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 6-size.c
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 6-size.c
     
-7. Intel
-#advanced
-Score: 100.0% (Checks completed: 100.0%)
+# Task 7. Intel
 Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
 
-The C file name will be saved in the variable $CFILE.
-The output file should be named the same as the C file, but with the extension .s instead of .c.
-Example: if the C file is main.c, the output file should be main.s
+- The C file name will be saved in the variable ``$CFILE``.
+- The output file should be named the same as the C file, but with the extension .s instead of .c.
+	- Example: if the C file is ``main.c``, the output file should be ``main.s``
+```bash
 khalfan@aisha:~/c/0x00$ export CFILE=main.c
 khalfan@aisha:~/c/0x00$ cat main.c
 #include <stdio.h>
@@ -442,20 +441,20 @@ main:
     .ident  "GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609"
     .section    .note.GNU-stack,"",@progbits
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 100-intel
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 100-intel
     
-8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
-#advanced
-Score: 95.0% (Checks completed: 100.0%)
+# Task 8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
 Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
 
-You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
-Your program should return 1
-Your program should compile without any warnings when using the -Wall gcc option
+- You are not allowed to use any functions listed in the ``NAME`` section of the ``man (3) printf`` or ``man (3) puts``
+- Your program should return 1
+- Your program should compile without any warnings when using the ``-Wall gcc`` option
+```bash
 khalfan@aisha:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
 khalfan@aisha:~/c/0x00$ ./quote
 and that piece of art is useful" - Dora Korpar, 2015-10-19
@@ -467,8 +466,9 @@ and that piece of art is useful" - Dora Korpar, 2015-10-19
 khalfan@aisha:~/c/0x00$ grep printf < 101-quote.c
 khalfan@aisha:~/c/0x00$ grep put < 101-quote.c
 khalfan@aisha:~/c/0x00$ 
+```
 Repo:
 
-GitHub repository: alx-low_level_programming
-Directory: 0x00-hello_world
-File: 101-quote.c
+- GitHub repository: alx-low_level_programming
+- Directory: 0x00-hello_world
+- File: 101-quote.c
