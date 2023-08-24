@@ -180,7 +180,7 @@ What is the size of the unsigned int data type?
 - [ ] 2 bytes
 - [ ] 1 byte
 - [ ] 8 bytes
-- [ ] 4 bytes
+- [x] 4 bytes
 </details>
 
 # Tasks
