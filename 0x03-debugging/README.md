@@ -24,6 +24,7 @@ Debugging is the process of finding and fixing errors in software that prevents 
 ## Quiz questions
 <details>
 <summary>Great! You've completed the quiz successfully! Keep going! (Show quiz) </summary>
+
 **Question #0**
 
 This code doesn’t work as intended.
